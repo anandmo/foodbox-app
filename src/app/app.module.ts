@@ -8,6 +8,7 @@ import {ProductService} from "./product.service";
 import { ProductGridComponent } from './product-grid/product-grid.component';
 import { ProductFormComponent } from './product-form/product-form.component';
 import {FormsModule} from "@angular/forms";
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,12 +17,14 @@ import {FormsModule} from "@angular/forms";
     ProductGridComponent,
     ProductFormComponent
   ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    AppRoutingModule
+  ],
   providers: [ProductService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Product} from "../product";
 import {ProductService} from "../product.service";
-// import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-product-form',
@@ -12,8 +12,8 @@ export class ProductFormComponent implements OnInit {
 
   product:Product;
   constructor(
-    // private route: ActivatedRoute,
-    // private router: Router,
+    private route: ActivatedRoute,
+    private router: Router,
     private productService: ProductService
   ) {
     this.product = new Product();
@@ -21,7 +21,13 @@ export class ProductFormComponent implements OnInit {
 
   onSubmit() {
    // console.log(this.product.p_name);
-    this.productService.save(this.product).subscribe();
+    this.productService.save(this.product).subscribe(() => this.gotoProductList());
+  }
+
+  gotoProductList() {
+    this.router.navigate(['/products']).then(() => {
+
+    });
   }
 
   ngOnInit(): void {
