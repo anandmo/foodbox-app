@@ -8,7 +8,7 @@ import { HttpClient} from '@angular/common/http';
 })
 export class ProductService {
 
-  private productUrl:string;
+  private readonly productUrl:string;
 
   constructor(private http:HttpClient) {
     this.productUrl = "http://localhost:8080/product";
@@ -17,5 +17,9 @@ export class ProductService {
   public findAll(): Observable<Product[]> {
     return this.http.get<Product[]>(this.productUrl);
 }
+
+  public save(product:Product) {
+    return this.http.post<Product>(this.productUrl,product);
+  }
 
 }
