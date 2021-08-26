@@ -8,7 +8,7 @@ import {ActivatedRoute, Router} from "@angular/router";
   templateUrl: './product-form.component.html',
   styleUrls: ['./product-form.component.css']
 })
-export class ProductFormComponent implements OnInit {
+export class ProductFormComponent { //implements OnInit {
 
   product:Product;
   constructor(
@@ -20,17 +20,26 @@ export class ProductFormComponent implements OnInit {
   }
 
   onSubmit() {
-   // console.log(this.product.p_name);
+    console.log("LOGGING PRODUCT DETAILS");
+    console.log("++++++++++++++++++++++++");
+    console.log(this.product.p_id);
+    console.log(this.product.p_name);
+    console.log(this.product.p_image);
+    console.log(this.product.p_instock);
+    console.log(this.product.p_description);
+    console.log("END OF PRODUCT DETAILS");
+    console.log("ProductService save(Product) method is called");
     this.productService.save(this.product).subscribe(() => this.gotoProductList());
   }
 
   gotoProductList() {
+    console.log("INSIDE gotoProductList");
     this.router.navigate(['/products']).then(() => {
-
+      console.log("REDIRECTED TO /products");
     });
   }
 
-  ngOnInit(): void {
-  }
+  // ngOnInit(): void {
+  // }
 
 }

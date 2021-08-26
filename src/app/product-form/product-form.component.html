@@ -16,14 +16,15 @@
     <form (ngSubmit)="onSubmit()" #productForm="ngForm">
 
       <div class="form-group">
-        <label for="name">Name</label>
+        <label for="p_name">Name</label>
         <input type="text" [(ngModel)]="product.p_name"
                class="form-control"
-               id="name"
-               name="name"
+               id="p_name"
+               name="p_name"
                placeholder="Enter Product name"
-               required #name="ngModel">
+               required #p_name="ngModel">
       </div>
+      <p>You entered : {{product.p_name}}</p>
 
       <div class="form-group">
         <label for="name">Description</label>
@@ -34,6 +35,7 @@
                placeholder="Enter Product description"
                required #description="ngModel">
       </div>
+      <p>You entered : {{product.p_description}}</p>
 
       <div class="form-group">
         <label for="image">Image</label>
@@ -44,6 +46,7 @@
                placeholder="Enter Product image location"
                required #image="ngModel">
       </div>
+      <p>You entered : {{product.p_image}}</p>
 
     <!--  <div class="form-group">
         <label for="instock">In Stock</label>
@@ -55,7 +58,7 @@
                required #instock="ngModel">
       </div> -->
 
-      <div [hidden]="!name.pristine" class="alert alert-danger">Name is required</div>
+      <div [hidden]="!p_name.pristine" class="alert alert-danger">Name is required</div>
       <div [hidden]="!description.pristine" class="alert alert-danger">Description is required</div>
       <div [hidden]="!image.pristine" class="alert alert-danger">Image is required</div>
      <!-- <div [hidden]="!instock.pristine" class="alert alert-danger">In stock is required</div> -->
