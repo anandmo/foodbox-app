@@ -9,13 +9,15 @@ import { ProductGridComponent } from './product-grid/product-grid.component';
 import { ProductFormComponent } from './product-form/product-form.component';
 import {FormsModule} from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductGridComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
