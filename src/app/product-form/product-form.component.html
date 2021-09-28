@@ -48,7 +48,7 @@
       </div>
       <p>You entered : {{product.p_image}}</p>
 
-    <!--  <div class="form-group">
+     <div class="form-group">
         <label for="instock">In Stock</label>
         <input type="text" [(ngModel)]="product.p_instock"
                class="form-control"
@@ -56,12 +56,12 @@
                name="instock"
                placeholder="Is the product in stock"
                required #instock="ngModel">
-      </div> -->
+      </div> 
 
       <div [hidden]="!p_name.pristine" class="alert alert-danger">Name is required</div>
       <div [hidden]="!description.pristine" class="alert alert-danger">Description is required</div>
       <div [hidden]="!image.pristine" class="alert alert-danger">Image is required</div>
-     <!-- <div [hidden]="!instock.pristine" class="alert alert-danger">In stock is required</div> -->
+     <div [hidden]="!instock.pristine" class="alert alert-danger">In stock is required</div>
 
       <button type="submit" [disabled]="!productForm.form.valid"
               class="btn btn-info">Submit</button>
