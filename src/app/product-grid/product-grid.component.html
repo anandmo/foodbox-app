@@ -1,64 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>FOOD BOX</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="jumbotron text-center">
-  <h1>FOODBOX</h1>
-  <p>THE MOST TASTY FOOD EVER</p>
-</div>
-
-<div class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="http://localhost:4200/">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <a class="navbar-brand" href="#">Login</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <a class="navbar-brand" routerLink="/signup">Sign Up</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <a class="navbar-brand" href="#">Cart</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
-<form class="form-inline my-2 my-lg-0">
-  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-</form>
-
-</div> 
-
-
-
 <div class="container">
   <div class="row">
-   
+
     <div class="col-sm-4" *ngFor="let product of products">
       <h3>{{product.p_name}}</h3>
       <!--float: left; padding: 15px 5px 10px 20px;-->
-      <p><img style=" border: 5px solid rgb(250, 246, 246);" src = "{{product.p_image}}" alt = "{{product.p_id}}" width="400" height="400" ></p>
+      <p><img style=" border: 5px solid rgb(85, 214, 214);" src="{{product.p_image}}" alt="{{product.p_id}}"
+          width="300" height="300"></p>
       <p>{{product.p_description}}</p>
-      <p><button style = "color: grey;">ADD TO CART</button></p>
+      <p><button style="color: grey;">ADD TO CART</button></p>
+      <hr>
     </div>
 
   </div>
 </div>
-
-</body>
-</html>

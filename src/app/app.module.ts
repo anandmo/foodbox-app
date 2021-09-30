@@ -10,6 +10,8 @@ import { ProductFormComponent } from './product-form/product-form.component';
 import {FormsModule} from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { UserFormComponent } from './user-form/user-form.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { UserFormComponent } from './user-form/user-form.component';
     ProductListComponent,
     ProductGridComponent,
     ProductFormComponent,
-    UserFormComponent
+    UserFormComponent,
+    LoginpageComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
