@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { UserFormComponent } from './user-form/user-form.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     ProductFormComponent,
     UserFormComponent,
     LoginpageComponent,
-    NavBarComponent
+    NavBarComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
