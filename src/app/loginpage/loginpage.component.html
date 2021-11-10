@@ -5,9 +5,9 @@
     <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
 
       <div class="form-group">
-        <label for="u_name">Username</label>
-        <input #u_name="ngModel" [(ngModel)]="user.u_name" class="form-control" id="u_name" name="u_name"
-          placeholder="Enter your full name" required type="text">
+        <label for="u_email">Email</label>
+        <input #u_email="ngModel" [(ngModel)]="user.u_email" class="form-control" id="u_email" name="u_email"
+          placeholder="Enter your Email" required type="text">
       </div>
 
 

@@ -21,4 +21,8 @@ export class UserService {
     return this.http.post<User>(this.userUrl, user);
   }
 
+  public verifyLogin(user: User): Observable<User> {
+    return this.http.post<User>("http://localhost:8080/verifylogin",user);
+  }
+
 }
