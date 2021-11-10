@@ -13,6 +13,8 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { AdminportalComponent } from './adminportal/adminportal.component';
+import { AddtocartComponent } from './addtocart/addtocart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     UserFormComponent,
     LoginpageComponent,
     NavBarComponent,
-    AboutusComponent
+    AboutusComponent,
+    AdminportalComponent,
+    AddtocartComponent
   ],
   imports: [
     BrowserModule,

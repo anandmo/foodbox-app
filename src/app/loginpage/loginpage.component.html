@@ -2,7 +2,7 @@
 
   <div class="card-body">
 
-<!--  <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
 
       <div class="form-group">
         <label for="u_name">Username</label>
@@ -13,15 +13,15 @@
 
 
       <div class="form-group">
-        <label for="u_address">Password</label>
-        <input #u_address="ngModel" [(ngModel)]="user.u_address" class="form-control" id="u_address" name="u_address"
-          placeholder="Enter your full address" required type="text">
+        <label for="u_password">Password</label>
+        <input #u_password="ngModel" [(ngModel)]="user.u_password" class="form-control" id="u_password"
+          name="u_password" placeholder="Enter your full address" required type="text">
       </div>
 
-      <button [disabled]="!userForm.form.valid" class="btn btn-info" type="submit">Submit
+      <button [disabled]="!loginForm.form.valid" class="btn btn-info" type="submit">Submit
       </button>
 
-    </form> -->
+    </form>
 
   </div>
 

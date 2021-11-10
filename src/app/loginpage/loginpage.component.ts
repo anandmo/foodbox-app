@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
 
 @Component({
   selector: 'app-loginpage',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginpageComponent implements OnInit {
 
-  constructor() { }
+  user: User;
+
+  constructor() {
+    this.user = new User();
+  }
+
+  onSubmit() {
+    alert("Information has been saved");
+  }
 
   ngOnInit(): void {
   }

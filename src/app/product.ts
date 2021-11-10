@@ -4,4 +4,5 @@ export class Product {
    p_description : String = "";
    p_image : String = "";
    p_instock : Boolean = false;
+   p_cost : Number = 0;
 }
