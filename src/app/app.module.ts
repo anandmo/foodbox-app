@@ -15,6 +15,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AdminportalComponent } from './adminportal/adminportal.component';
 import { AddtocartComponent } from './addtocart/addtocart.component';
+import { UserTitleComponent } from './user-title/user-title.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
     NavBarComponent,
     AboutusComponent,
     AdminportalComponent,
-    AddtocartComponent
+    AddtocartComponent,
+    UserTitleComponent
   ],
   imports: [
     BrowserModule,
