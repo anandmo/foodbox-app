@@ -29,7 +29,9 @@ export class LoginpageComponent implements OnInit {
       } else {
         alert("You have been logged in successfully");
         this.cookieService.set( 'username', this.user.u_name );
+        
         this.router.navigate(['home']);
+        
       }
     
     });

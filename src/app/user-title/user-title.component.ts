@@ -17,6 +17,8 @@ export class UserTitleComponent implements OnInit {
       this.usernameCookie = "User";
     } 
 
+    
+
   }
 
 }
