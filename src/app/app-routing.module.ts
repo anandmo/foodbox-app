@@ -9,6 +9,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { AppComponent } from './app.component';
 import { AdminportalComponent } from './adminportal/adminportal.component';
 import { ProductFormComponent } from './product-form/product-form.component';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'about', component: AboutusComponent},
   {path: 'home', component: ProductGridComponent},
   {path: 'admin', component: AdminportalComponent},
-  {path: 'addproduct', component: ProductFormComponent} 
+  {path: 'addproduct', component: ProductFormComponent}, 
+  {path: 'loadcart', component: CartComponent}
 ];
 
 @NgModule({

@@ -9,7 +9,18 @@ export class AddtocartComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  onSubmit() {
+      
+          
+    
+
   }
+
+  ngOnInit(): void {
+
+
+  }
+
+
 
 }

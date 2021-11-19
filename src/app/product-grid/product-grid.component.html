@@ -2,16 +2,54 @@
   <div class="row">
 
     <div class="col-sm-4" *ngFor="let product of products">
-      <h3>{{product.p_name}}</h3>
-      <!--float: left; padding: 15px 5px 10px 20px;-->
-      <p><img style=" border: 5px solid rgb(85, 214, 214);" src="{{product.p_image}}" alt="{{product.p_id}}"
-          width="300" height="300"></p>
-      <p>{{product.p_description}}</p>
-      <p>Price : {{product.p_cost}}</p>
-      <app-addtocart></app-addtocart>
+
+      <form #addtocartButton="ngForm" (ngSubmit)="onSubmit()">
+
+        <h3>{{product.p_name}}</h3>
+        <!--float: left; padding: 15px 5px 10px 20px;-->
+        <p><img style=" border: 5px solid rgb(85, 214, 214);" src="{{product.p_image}}" alt="{{product.p_id}}"
+            width="300" height="300"></p>
+        <p>{{product.p_description}}</p>
+        <p>Price : {{product.p_cost}}</p>
+
+        <!-- <label for="qty"></label> -->
+        <p>Select Quantity</p>
+        <select [(ngModel)]="selectedOption" name="qty">
+          <option value="" selected disabled hidden>Select Quantity</option>
+          <option value={{product.p_cost}}>1</option>
+          <option value={{(product.p_cost)*2}}>2</option>
+          <option value={{(product.p_cost)*3}}>3</option>
+          <option value={{(product.p_cost)*4}}>4</option>
+          <option value={{(product.p_cost)*5}}>5</option>
+          <option value={{(product.p_cost)*6}}>6</option>
+          <option value={{(product.p_cost)*7}}>7</option>
+          <option value={{(product.p_cost)*8}}>8</option>
+          <option value={{(product.p_cost)*9}}>9</option>
+        </select>
+
+        <p>Select Size</p>
+        <select [(ngModel)]="selectedProduct" name="product">
+          <option value={{product.p_name}}>Regular</option>
+          <option value={{product.p_name}}>Medium</option>
+          <option value={{product.p_name}}>Large</option>
+        </select>
+
+
+        <!-- <select [(ngModel)]="selectedProductCost" name = "productCost">
+          <option value={{product.p_cost}} selected="selected">{{product.p_cost}}</option>
+        </select> -->
+
+        <!-- <input type="text" [(ngModel)]="selectedProduct" name = "product" value={{product.p_name}}>
+        <input type="text" [(ngModel)]="selectedProductCost" name = "productCost" value={{product.p_cost}}> -->
+         &nbsp;
+         
+        <button style="color: grey;">Add to Cart</button>
+
+      </form>
+
       <hr>
     </div>
-       
+
   </div>
-  
+
 </div>

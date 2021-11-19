@@ -1,0 +1,24 @@
+<p>Cart Works!!</p>
+
+<div align="center">
+
+    <p>Thats looks great {{username}}, please review your cart before placing this order</p>
+    <table>
+        <tr>
+            <th>Items</th>
+        </tr>
+        <div id = "test" class="col-sm-4" *ngFor="let item of cartItem">
+            <tr>
+                <td>{{item}}</td>
+            </tr>
+        </div>
+    </table>
+
+    <p>------------</p>
+
+    <p>Total : {{totalCost}}</p>
+    <p>The order will be delivered at {{userAddress}}</p>
+    <button>Proceed for payment</button>
+    <br><br>
+
+</div>

@@ -17,6 +17,7 @@ import { AdminportalComponent } from './adminportal/adminportal.component';
 import { AddtocartComponent } from './addtocart/addtocart.component';
 import { UserTitleComponent } from './user-title/user-title.component';
 import { SignOutComponent } from './sign-out/sign-out.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SignOutComponent } from './sign-out/sign-out.component';
     AdminportalComponent,
     AddtocartComponent,
     UserTitleComponent,
-    SignOutComponent
+    SignOutComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
