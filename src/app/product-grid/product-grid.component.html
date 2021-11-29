@@ -1,5 +1,18 @@
 <div class="container">
+
+  <p>Filter by type</p>
+  <select>
+    <option>All</option>
+    <option>Pizza</option>
+    <option>Drinks</option>
+    <option>Fries</option>
+    <option>Sweets</option>
+    <option>South Indian</option>
+    <option>Chinese</option>
+  </select>
+
   <div class="row">
+
 
     <div class="col-sm-4" *ngFor="let product of products">
 
@@ -41,8 +54,8 @@
 
         <!-- <input type="text" [(ngModel)]="selectedProduct" name = "product" value={{product.p_name}}>
         <input type="text" [(ngModel)]="selectedProductCost" name = "productCost" value={{product.p_cost}}> -->
-         &nbsp;
-         
+        &nbsp;
+
         <button style="color: grey;">Add to Cart</button>
 
       </form>
