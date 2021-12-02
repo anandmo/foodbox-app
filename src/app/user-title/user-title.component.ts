@@ -11,6 +11,7 @@ export class UserTitleComponent implements OnInit {
   constructor(private cookieService: CookieService) { }
 
   ngOnInit(): void {
+    //window.location.reload();
     this.usernameCookie = this.cookieService.get('username');
     
     if(this.usernameCookie.length === 0){

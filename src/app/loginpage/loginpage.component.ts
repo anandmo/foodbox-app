@@ -34,6 +34,7 @@ export class LoginpageComponent implements OnInit {
         this.cookieService.set('email', this.user.u_email);
         this.cookieService.set("id", this.user.u_id.toString());
 
+        
         this.router.navigate(['home']);
 
       }

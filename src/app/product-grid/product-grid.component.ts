@@ -51,8 +51,9 @@ export class ProductGridComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
     this.productService.findAll().subscribe(data => { this.products = data; });
+    
   }
 
 }
